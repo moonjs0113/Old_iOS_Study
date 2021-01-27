@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - Hero (1.5.0)
+  - SwiftyJSON (4.3.0)
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - Hero
+  - SwiftyJSON (~> 4.0)
+  - TextFieldEffects
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Hero
+    - SwiftyJSON
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: 1b1cd26fab5686b60b895f60645abaca24ba6449
+
+COCOAPODS: 1.9.0.beta.2

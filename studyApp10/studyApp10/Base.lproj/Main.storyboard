@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="studyApp10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DpG-BD-FAq">
+                                <rect key="frame" x="5" y="5" width="404" height="798"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UKY-vZ-Wds" userLabel="Naver Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="399"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n3B-6k-D4Z" userLabel="Menu Stack">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="50.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EPb-Ab-bEg" userLabel="First Stack">
+                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="20.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naver Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPC-bC-LAa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="202" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za6-uv-jzg">
+                                                                <rect key="frame" x="202" y="0.0" width="202" height="20.5"/>
+                                                                <state key="normal" title="Static Map"/>
+                                                                <connections>
+                                                                    <action selector="staticMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENt-6H-ttf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="egJ-Xg-u0S" userLabel="Second Stack">
+                                                        <rect key="frame" x="0.0" y="20.5" width="404" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8w-Fa-gpG">
+                                                                <rect key="frame" x="0.0" y="0.0" width="202" height="30"/>
+                                                                <state key="normal" title="GeoCode"/>
+                                                                <connections>
+                                                                    <action selector="GeoCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARj-FU-d7z"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrF-Se-DoR">
+                                                                <rect key="frame" x="202" y="0.0" width="202" height="30"/>
+                                                                <state key="normal" title="Reverse GeoCode"/>
+                                                                <connections>
+                                                                    <action selector="reverseGeoCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZv-ej-t1B"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAh-Z0-QnQ" customClass="NMFMapView">
+                                                <rect key="frame" x="0.0" y="50.5" width="404" height="348.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Lcd-wI-I2O" firstAttribute="trailing" secondItem="HAh-Z0-QnQ" secondAttribute="trailing" id="3Pv-Zt-Jqu"/>
+                                            <constraint firstItem="HAh-Z0-QnQ" firstAttribute="leading" secondItem="Lcd-wI-I2O" secondAttribute="leading" id="URm-gv-Cgq"/>
+                                            <constraint firstItem="Lcd-wI-I2O" firstAttribute="bottom" secondItem="HAh-Z0-QnQ" secondAttribute="bottom" id="WhP-an-MX1"/>
+                                            <constraint firstItem="HAh-Z0-QnQ" firstAttribute="top" secondItem="n3B-6k-D4Z" secondAttribute="bottom" id="t40-Jd-4J4"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="Lcd-wI-I2O"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WR6-gB-dbl" userLabel="Kakao Stack">
+                                        <rect key="frame" x="0.0" y="399" width="404" height="399"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VGH-5R-b4D">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kakao Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnm-7t-2Oh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="202" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQR-9n-E06">
+                                                        <rect key="frame" x="202" y="0.0" width="202" height="30"/>
+                                                        <state key="normal" title="Apple MapKit"/>
+                                                        <connections>
+                                                            <segue destination="gbQ-ks-wZm" kind="presentation" modalPresentationStyle="automatic" id="q8P-2r-bHM"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-Uq-6rO">
+                                                <rect key="frame" x="0.0" y="30" width="404" height="369"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UKY-vZ-Wds" firstAttribute="top" secondItem="3Bt-h8-VYo" secondAttribute="top" id="7ij-HQ-rBe"/>
+                                    <constraint firstItem="WR6-gB-dbl" firstAttribute="leading" secondItem="DpG-BD-FAq" secondAttribute="leading" id="XOs-vd-net"/>
+                                    <constraint firstItem="3Bt-h8-VYo" firstAttribute="trailing" secondItem="UKY-vZ-Wds" secondAttribute="trailing" id="dML-k6-XUU"/>
+                                    <constraint firstItem="WR6-gB-dbl" firstAttribute="top" secondItem="UKY-vZ-Wds" secondAttribute="bottom" id="fFh-bK-90G"/>
+                                    <constraint firstAttribute="bottom" secondItem="WR6-gB-dbl" secondAttribute="bottom" id="hwH-5h-DkW"/>
+                                    <constraint firstAttribute="trailing" secondItem="WR6-gB-dbl" secondAttribute="trailing" id="kZO-iu-bvg"/>
+                                    <constraint firstItem="UKY-vZ-Wds" firstAttribute="leading" secondItem="3Bt-h8-VYo" secondAttribute="leading" id="ofF-YI-BxF"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="3Bt-h8-VYo"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DpG-BD-FAq" secondAttribute="trailing" constant="5" id="0ve-rB-D77"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DpG-BD-FAq" secondAttribute="bottom" constant="5" id="860-4i-mhV"/>
+                            <constraint firstItem="DpG-BD-FAq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="UuQ-3c-Awg"/>
+                            <constraint firstItem="HAh-Z0-QnQ" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.975845" id="Xsy-qN-G3W"/>
+                            <constraint firstItem="HAh-Z0-QnQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a0j-H1-blX"/>
+                            <constraint firstItem="DpG-BD-FAq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="arX-Kd-4ef"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="kakaoView" destination="5fY-Uq-6rO" id="WY5-7G-EKo"/>
+                        <outlet property="naverView" destination="HAh-Z0-QnQ" id="tqs-I9-bvP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Apple Map Kit View Controller-->
+        <scene sceneID="tru-96-WCc">
+            <objects>
+                <viewController id="gbQ-ks-wZm" customClass="appleMapKitViewController" customModule="studyApp10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jke-EY-O3i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UGz-zv-T05">
+                                <rect key="frame" x="5" y="5" width="404" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RKD-J6-vqT">
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecC-NX-uF8">
+                                                <rect key="frame" x="0.0" y="0.0" width="202" height="30"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="backFunc:" destination="gbQ-ks-wZm" eventType="touchUpInside" id="eCH-ci-6R9"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="automatic" id="Oby-8b-UKO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMH-Q6-Ayj">
+                                                <rect key="frame" x="0.0" y="30" width="202" height="30"/>
+                                                <state key="normal" title="Go Location"/>
+                                                <connections>
+                                                    <action selector="goBtn:" destination="gbQ-ks-wZm" eventType="touchUpInside" id="awr-9c-CP8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="niV-zp-YkP">
+                                        <rect key="frame" x="202" y="0.0" width="202" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-jO-kVI">
+                                                <rect key="frame" x="0.0" y="0.0" width="202" height="30"/>
+                                                <state key="normal" title="Go Konkuk Univ."/>
+                                                <connections>
+                                                    <action selector="goKonkukUniv:" destination="gbQ-ks-wZm" eventType="touchUpInside" id="la5-F7-iw0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OY-0h-NtK">
+                                                <rect key="frame" x="0.0" y="30" width="202" height="30"/>
+                                                <state key="normal" title="Go LG CNS"/>
+                                                <connections>
+                                                    <action selector="goLGCNS:" destination="gbQ-ks-wZm" eventType="touchUpInside" id="i0k-WW-moO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Puz-Am-J2e">
+                                <rect key="frame" x="5" y="70" width="404" height="733"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Kt5-GU-hCs" firstAttribute="bottom" secondItem="Puz-Am-J2e" secondAttribute="bottom" constant="5" id="HvU-hO-2Xf"/>
+                            <constraint firstItem="Kt5-GU-hCs" firstAttribute="trailing" secondItem="UGz-zv-T05" secondAttribute="trailing" constant="5" id="LfT-js-skr"/>
+                            <constraint firstItem="Puz-Am-J2e" firstAttribute="leading" secondItem="Kt5-GU-hCs" secondAttribute="leading" constant="5" id="REa-Y3-wzp"/>
+                            <constraint firstItem="Kt5-GU-hCs" firstAttribute="trailing" secondItem="Puz-Am-J2e" secondAttribute="trailing" constant="5" id="U6b-t2-9NL"/>
+                            <constraint firstItem="UGz-zv-T05" firstAttribute="top" secondItem="Kt5-GU-hCs" secondAttribute="top" constant="5" id="UkL-p8-NJL"/>
+                            <constraint firstItem="Puz-Am-J2e" firstAttribute="top" secondItem="UGz-zv-T05" secondAttribute="bottom" constant="5" id="VoK-4Q-lsm"/>
+                            <constraint firstItem="UGz-zv-T05" firstAttribute="leading" secondItem="Kt5-GU-hCs" secondAttribute="leading" constant="5" id="a1l-EL-Zls"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kt5-GU-hCs"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Puz-Am-J2e" id="fhe-A4-DQw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTX-uP-XjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.66666666666674" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
