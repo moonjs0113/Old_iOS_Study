@@ -1,6 +1,0 @@
-framework module Pods_perfectDay0 {
-  umbrella header "Pods-perfectDay0-umbrella.h"
-
-  export *
-  module * { export * }
-}

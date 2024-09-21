@@ -1,78 +1,22 @@
-# Swift
+# iOS Study (~2022. 12. 31.)
 
-gem install cocoapods --pre
+## UIKit Study (2020. 01. ~ 2020. 03.)
+- StoryBoard를 활용한 iOS 앱 만들어보기
 
-git 내려받기
-```
-git pull
-```
+## NaverVoice (2020. MM.)
+- Naver TTS를 활용한 앱 만들기
 
+## NetworkTest (2020. MM.)
+- 외부 라이브러리(`Alamofire`, `SwiftyJSON`, `CryptoSwift`)를 활용한 API 테스트
 
-0. Version
-- macOS : 10.15.2 (Catalina)
-- Swift: 5.1.3
-- Xcode : 11.3
-- install 
+## iOS-BiometricTestApp(2022. 05. 26.)
+- Biometric 인증을 적용해보는 프로젝트
 
-1. studyApp0
-- TextField
-- Label
-- Button
-- Image View
-- Switch
-- Date Picker 
+## PopCat (2022. 06. 23.)
+- 귀여운 고양이 프로젝트
 
-2. studyApp1
-- Picker View
-- Alert
-- Web Kit View
-- Toolbar
-- Flexible Space Bar Button Item
-- Bar Button Item
-- Activity Indicator View
+## Separate-Consonants-and-Vowels (2022. 07. 26.)
+- 한글 자모음을 분리해보는 프로젝트
 
-3. studyApp2
-- Segmented Control
-- Map Kit View
-- Page Control
-- Tab Bar Controller
-
-4. studyApp3 (Chapter11) -> 무조건 다시보기
-- Navigation Controller
-- View Controller -> Show
-- UIViewController -> (File - New - File - Cocoa Touch Class - UIViewController)
-- StoryBoard segue identifier
-- protocol
-
-5. studyApp4 (Chapter12)
-- Tabel View Controller
-- Text View
-
-6. studyApp5
-- Present Modally(Full Screen)
-- StoryBoard
-
-7. studyApp6
-- Auto Layout
-- Safe Area & Superview
-
-8. studyApp7(Chapter13~15)
-- Stack View (Verical, Horizontal)
-- AVFoundation Module - > 음악 재생 모듈
-- AVAuidoPlayer
-- Selector
-- AVAuidoRecorder
-- Timer
-- UIProgressView
-- UISlider
-- AVKit Module -> 영상 재생 모듈
-- AVPlayer View Controller
-- UIImagePickerController
-- MobileCoreServices
-
-9. studyApp8 (Chapter 16)
-- UIGraphics
-
-10. studyApp9
-- framework test
-
+## SwiftUI (2022. 01. 17. ~ 2022. 07. 31)
+- SwiftUI에 대해 공부하는 프로젝트
