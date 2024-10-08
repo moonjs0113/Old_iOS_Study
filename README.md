@@ -17,6 +17,3 @@
 
 ## [Separate-Consonants-and-Vowels](https://github.com/moonjs0113/iOS_Study/tree/master/Separate-Consonants-and-Vowels) (2022. 07. 26.)
 - 한글 자모음을 분리해보는 프로젝트
-
-## [SwiftUI](https://github.com/moonjs0113/iOS_Study/tree/master/SwiftUI) (2022. 01. 17. ~ 2022. 07. 31)
-- SwiftUI에 대해 공부하는 프로젝트
